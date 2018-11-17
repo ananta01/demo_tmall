@@ -1,0 +1,388 @@
+html {
+    font-size: 100px;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+
+/*common start*/
+
+.m-12 {
+    margin: 0 .12rem;
+}
+
+/*common end*/
+
+
+#header {
+    width: 100%;
+    padding: 0 .12rem .1rem;
+    box-sizing: border-box;
+    background: rgb(255, 0, 54);
+}
+
+.header-top {
+    display: flex;
+    height: .44rem;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-top a {
+    width: .3rem;
+    height: .3rem;
+    background: url("../img/icon.webp") no-repeat 0 0;
+    background-size: 564px .3rem;
+}
+
+.header-top img {
+    width: 1.185rem;
+    height: .205rem;
+}
+
+.header-top span {
+    font-size: .14rem;
+    color: #fff;
+}
+
+.header-search {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: .36rem;
+    background: #fff;
+    border-radius: .05rem;
+}
+
+.header-search .search-icon {
+    width: .15rem;
+    height: .15rem;
+    background: url("../img/search.webp") no-repeat 0 0;
+    background-size: .15rem .15rem;
+    margin: 0 .1rem;
+}
+
+.header-search .search-text {
+    font-size: .14rem;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+#nav {
+    display: flex;
+    margin-bottom: .1rem;
+}
+
+#nav a {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav a img {
+    width: .48rem;
+    height: .48rem;
+    margin: .05rem .11rem .1rem;
+}
+
+#nav a .nav-title {
+    font-size: .13rem;
+    color: #000;
+}
+
+.banner-wrap {
+    position: relative;
+    width: 100%;
+    height: 1.325rem;
+    overflow: hidden;
+}
+
+.banner-bg {
+    width: 100%;
+    height: .14rem;
+}
+
+.banner-wrap {
+    display: flex;
+}
+
+.banner-list {
+    display: flex;
+}
+
+.banner-list li {
+    padding: 0 .12rem;
+    background: #fff;
+}
+
+.banner-list li img {
+    width: 3.51rem;
+    height: 1.325rem;
+}
+
+.banner-index {
+    position: absolute;
+    left: 50%;
+    bottom: .1rem;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.banner-index li {
+    width: .16rem;
+    height: .02rem;
+    margin: 0 .03rem;
+    background: rgba(255, 255, 255, .6);
+}
+
+.banner-index li.active {
+    background: rgb(255, 255, 255);
+}
+
+.ad {
+    width: 100%;
+    height: 1.8rem;
+    margin-bottom: .1rem;
+    overflow: hidden;
+}
+
+.ad img {
+    width: 100%;
+    height: 100%;
+}
+
+.items-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.items-rush, .items-rush .item {
+    display: flex;
+    flex-direction: column;
+}
+
+.items-rush {
+    width: 1.72rem;
+    height: 1.285rem;
+    padding-top: .14rem;
+    box-sizing: border-box;
+    background: url("../img/bg1.png") no-repeat right top;
+    background-size: cover;
+}
+
+.items-rush:nth-child(2) {
+    margin-left: .06rem;
+}
+
+.items-rush .title {
+    position: relative;
+}
+
+.items-rush .title h2{
+    position: absolute;
+    left: .12rem;
+    font-size: .16rem;
+    font-weight: 700;
+    color: #000;
+}
+
+.items-rush .title .time{
+    position: absolute;
+    right: .15rem;
+    font-size: 0;
+}
+
+.items-rush .time span {
+    display: inline-block;
+}
+
+.items-rush .time-num {
+    width: .2rem;
+    height: .2rem;
+    line-height: .2rem;
+    text-align: center;
+    border-radius: .03rem;
+    background: #000;
+    color: #fff;
+    font-size: .14rem;
+}
+
+.items-rush .time-colon {
+    font-weight: 700;
+    font-size: .18rem;
+}
+
+.item-list {
+    display: flex;
+    margin-top: .24rem;
+    padding: 0 .04rem;
+}
+
+.item-list .item {
+    position: relative;
+}
+
+.item-list .item:nth-child(2) {
+    margin-left: .06rem;
+}
+
+.items-rush .item img {
+    width: .775rem;
+    height: .775rem;
+}
+
+.items-rush .item span, .like-label span {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: .1rem;
+    white-space: nowrap;
+    background: #fff;
+    border: .005rem solid rgb(255, 0, 54);
+    line-height: .1rem;
+    padding: .01rem;
+    color: rgb(255, 0, 54);
+}
+
+.items-big-rush {
+    display: flex;
+    width: 3.51rem;
+    margin-top: .06rem;
+}
+
+.items-big-rush .item-list .item {
+    flex: 1;
+}
+
+.items-big-rush .title-desc {
+    position: absolute;
+    left: .65rem;
+}
+
+.like .title{
+    font-size: .18rem;
+    font-weight: 700;
+    color: #000;
+    padding: .18rem 0 .12rem;
+}
+
+.like-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.like-item {
+    width: 1.68rem;
+    height: 3.205rem;
+    margin: .05rem 0;
+    overflow: hidden;
+    border: 1px solid #e8e8e8;
+}
+
+.like-item-main {
+    position: relative;
+}
+
+.like-item-main .img-container{
+    width: 1.68rem;
+    height: 1.68rem;
+    line-height: 1.68rem;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.03);
+}
+
+.like-item-main .img-container img {
+    width: 1.38rem;
+    height: 1.38rem;
+}
+
+.like-item-main .like-desc {
+    position: absolute;
+    left: .1rem;
+    top: 1.6rem;
+    display: inline-block;
+    padding: 0 .04rem;
+    background: rgb(205, 163, 177);
+    color: #fff;
+}
+
+.like-item-main .text-container {
+    padding: 0 .1rem;
+    height: .55rem;
+    box-sizing: border-box;
+}
+
+.like-item-main .like-item-title {
+    margin-top: .15rem;
+    font-size: .14rem;
+    color: #333;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+.like-label {
+    position: relative;
+    height: .2rem;
+}
+
+.like-label span {
+    left: .15rem;
+}
+
+.like-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: .4rem;
+    padding: 0 .1rem;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.like-price .price {
+    font-size: 16px;
+    font-weight: 700;
+    color: rgb(255, 0, 0);
+}
+
+.like-price .like-price-label {
+    display: inline-block;
+    padding: .02rem .1rem;
+    font-size: .14rem;
+    background-color: rgb(255, 230, 235);
+    border-radius: .3rem;
+    color: rgb(255, 0, 54);
+}
+
+.like-recommend {
+    height: .43rem;
+    line-height: .43rem;
+    font-size: .11rem;
+    margin-left: .1rem;
+}
+
+
+.go-to-top {
+    position: fixed;
+    bottom: .3rem;
+    right: .05rem;
+    z-index: 99;
+}
+
+.go-to-top img {
+    width: .44rem;
+    height: .44rem;
+}
+
+
+
+
